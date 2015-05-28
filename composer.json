@@ -1,0 +1,28 @@
+{
+    "name": "konstantin-kuklin/doctrine-handlersocket-driver",
+    "type": "library",
+    "description": "HandlerSocket protocol wrapper on native PHP",
+    "keywords": ["php", "library", "handler-socket", "handlersocket"],
+    "homepage": "https://github.com/KonstantinKuklin/HandlerSocketLibrary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Kuklin",
+            "email": "konstantin.kuklin@gmail.com"
+        }
+    ],
+    "require": {
+        "konstantin-kuklin/handlersocket-library": "dev-master",
+        "doctrine/orm": "2.4.*",
+        "symfony/yaml": "2.*"
+    },
+
+    "autoload": {
+        "psr-4": {"KonstantinKuklin\\DoctrineHandlerSocket\\": "src/DoctrineHandlerSocket/"}
+    },
+
+    "autoload-dev": {
+        "psr-4": {"KonstantinKuklin\\DoctrineHandlerSocket\\Tests\\": "tests/DoctrineHandlerSocket/"}
+    }
+
+}
