@@ -61,7 +61,7 @@ class ReadEntityFromSingleTableTest extends PHPUnit_Framework_TestCase
         foreach ($paramList as $key => $value) {
             $reflectionProperty = new \ReflectionProperty($object, $key);
             $reflectionProperty->setAccessible(true);
-            $reflectionProperty->setValue($key, $value);
+            $reflectionProperty->setValue($object, $value);
         }
 
         return $object;
